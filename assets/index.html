@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-mobile">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">
+                          <img src="./img/logo.png" alt="">
+                      </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Dự án</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Đóng góp</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Tin tức</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Liên hệ</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Giới thiệu
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                        <form class="d-flex">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+            <div class="header-pc">
+                <div class="header-left">
+                    <a href="./index.html">
+                        <img src="./img/logo.png" />
+                    </a>
+                </div>
+                <div class="header-right">
+                   <!-- <div class="contact"> -->
+                       <ul class="contact">
+                           <li>
+                               <a href="#">
+                                <i class="fas fa-phone-alt"></i>
+                                 0123 456 789
+                               </a>
+                           </li>
+                           <li>
+                               <a href="#">
+                                   VN
+                               </a>
+                           </li>
+                           <li>
+                            <a href="#">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </li>
+                       </ul>
+                   <!-- </div> -->
+                   <!-- <div class="menu"> -->
+                    <ul class="menu">
+                        <li class="active">
+                            <a href="#">
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Giới thiệu
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Dự án
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Đóng góp
+                            </a>
+                        </li>   
+                        <li>
+                            <a href="#">
+                                Tin tức
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Liên hệ
+                            </a>
+                        </li>
+                    </ul>
+                   <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section  class="ss1">
+            <div class="container">
+                <div class="slide">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./img/a1.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./img/a2.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./img/a3.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+        <section class="ss1">
+            <div class="container">
+                <div class="introduce-mobile"></div>
+                <div class="introduce-pc">
+                    <div class="introduce">
+                        <div class="intro-left">
+                            <!-- <div class="intro-wrapper"> -->
+                                <div class="title">
+                                 Giới thiệu dự án
+                                </div>
+                                <div class="intro-content">
+                                 <p>
+                                    Quỹ Vitamin C ra đời sau cuộc trò truyện của Vân và Vĩ Lâm
+                                    về tác hại khôn lường của chất độc da cam. Với những mối Liên
+                                    hệ mà gia đình đang có, hai chị em tin rằng họ có thể làm điều gì đó để thay
+                                    đổi cuộc sống của những người tàn tật khắp Việt Nam.
+                                 </p>
+                                 <br />
+                                 <p>
+                                     Tháng 9/2019, Vitamin C thực hiện chuyến viếng thăm đầu tiên tại
+                                     Tp.HCM: Trung tâm nuôi dưỡng Bảo Trợ trẻ em Gò Vấp và Trung tâm 
+                                     Trung tâm Bảo Trợ trẻ em tàn tật mồ côi Thị Nghè.
+                                 </p>
+                                </div>
+                                <div class="more">
+                                    <a href="#">
+                                        Xem thêm
+                                    </a>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                        <div class="intro-right">
+                                 <div class="intro-image">
+                                     <img src="./img/1.png" />
+                                 </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </section>
+        <section class="ss1">
+            <div class="container">
+                <div class="title-2">    
+                        Lý do thực hiện 
+                </div>
+                <div class="row">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="reason">
+                                <div class="con">
+                                    <div class="reason-icon">
+                                        <img src="./img/icon.png" />
+                                    </div>
+                                    
+                                </div>
+                                <p>
+                                    Giúp đỡ người khác và tạo ra những ảnh hưởng
+                                    tích cực tới đời sống của những người kém may mắn.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="reason">
+                                <div class="con">
+                                    <div class="reason-icon">
+                                        <img src="./img/icon.png" />
+                                    </div>
+                                    
+                                </div>
+                                <p>
+                                    Mọi điều kiện thuận lợi cho trẻ  mồ côi và khuyết tật 
+                                    hòa nhập với cộng đồng xã hội
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="reason">
+                                <div class="con">
+                                    <div class="reason-icon">
+                                        <img src="./img/icon.png" />
+                                    </div>
+                                    
+                                </div>
+                                <p>
+                                    Mong muốn tìm kiếm mọi người ở khắp nơi có cùng tấm lòng thiện nguyện, 
+                                    sở thích làm từ thiện ủng hộ và tham gia nhiệt tình
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="reason">
+                                <div class="con">
+                                    <div class="reason-icon">
+                                        <img src="./img/icon.png" />
+                                    </div>
+                                    
+                                </div>
+                                <p>
+                                    Cùng xây dựng và tô điểm cuộc đời, góp phần làm cho cuộc sống tươi đẹp hơn
+                                </p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section class="ss1">
+            <div class="container">
+                <div class="title-2">    
+                    Đối tượng dự án
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="obj">
+                            <div class="obj-image">
+                                <img src="./img/2.png" class="image-size" />
+                            </div>
+                            <p>
+                                Nạn nhân chất độc màu da cam
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="obj">
+                            <div class="obj-image">
+                                <img src="./img/3.png" class="image-size" />
+                            </div>
+                            <p>
+                                Trẻ em nghèo khuyết tật
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="obj">
+                            <div class="obj-image">
+                                <img src="./img/4.png" class="image-size" />
+                            </div>
+                            <p>
+                                Trẻ em mồ côi khuyết tật
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ss1">
+            <div class="container">
+                <div class="title-2">    
+                    Dự án đã thực hiện
+                </div>
+                <div class="project-finish">
+                    <div class="prj-img">
+                        <img src="./img/3.png" alt="">
+                    </div>
+                    <div class="prj-info">
+                       <div class="prj-info-center">
+                            <div class="date">
+                                13/07/2020
+                            </div>
+                            <div class="visit">
+                                <a href="#" class="info-underline">
+                                    Viếng thăm trung tâm Nuôi Dưỡng 
+                                    Bảo trợ trẻ em Gò Vấp và trung tâm
+                                    Bảo trợ trẻ em mồ côi thị Nghè
+                                </a>   
+                            </div> 
+                            <p>
+                                Sau nhiều ngày chuẩn bị, đầu tháng 9, 2019,
+                                Vitamin C đã có chuyến viếng thăm và trao tặng
+                                600 hộp bánh trung thu và các nhu yếu phẩm cho các 
+                                trẻ em ở Trung tâm Nuôi Dưỡng Bảo trợ trẻ em Gò Vấp 
+                                và Trung tâm Bảo trợ trẻ em mồ côi Thị Nghè. Chuyến đi 
+                                kết thúc mang lại nhiều cảm xúc và ký ức khó quên trong mỗi 
+                                người chúng tôi.
+                            </p> 
+                            <div class="more">
+                                <a href="#">
+                                    Xem thêm
+                                </a>
+                            </div>   
+                       </div>        
+                     </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="project-finish-con">
+                            <div class="prj-img-con">
+                                <img src="./img/4.png" alt="">
+                            </div>
+                            <div class="prj-info-con">
+                               <div class="prj-info-center">
+                                    <div class="date">
+                                        05/02/2020
+                                    </div>
+                                    <div class="visit-con">
+                                        <a href="#" class="info-underline">
+                                            Viếng thăm trung tâm giáo dục trẻ em khuyết 
+                                            tật Quận 4
+                                        </a>
+                                    </div> 
+                                    <div class="more-normal">
+                                        <a href="#">
+                                            Xem thêm
+                                        </a>
+                                    </div>   
+                               </div>        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="project-finish-con">
+                            <div class="prj-img-con">
+                                <img src="./img/5.png" alt="">
+                            </div>
+                            <div class="prj-info-con">
+                               <div class="prj-info-center">
+                                    <div class="date">
+                                        05/02/2020
+                                    </div>
+                                    <div class="visit-con">
+                                        <a href="#" class="info-underline">
+                                            Hoạt động bán nước ép bưởi gây quỹ
+                                        </a>
+                                    </div> 
+                                    <div class="more-normal">
+                                        <a href="#">
+                                            Xem thêm
+                                        </a>
+                                    </div>   
+                               </div>        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ss1">
+            <div class="container">
+                <div class="title-2">    
+                    Con số ấn tượng
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="box-all">
+                            <div class="box-wrapper">
+                                <div class="box-number">
+                                    <span>
+                                       <span id="big-size"> 2 </span>
+                                       tỷ
+                                    </span>
+                                    <br />
+                                    <span>
+                                        Số tiền quyên góp
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="box-all">
+                            <div class="box-wrapper">
+                                <div class="box-number">
+                                    <span>
+                                       <span id="big-size"> 20 </span>
+                                    </span>
+                                    <br />
+                                    <span>
+                                        Đơn vị tài trợ
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="box-all">
+                            <div class="box-wrapper">
+                                <div class="box-number">
+                                    <span>
+                                       <span id="big-size"> 100 </span>
+                                       +
+                                    </span>
+                                    <br />
+                                    <span>
+                                       Trẻ em được giúp đỡ
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="box-all">
+                            <div class="box-wrapper">
+                                <div class="box-number">
+                                    <span>
+                                       <span id="big-size"> 4 </span>
+                                       
+                                    </span>
+                                    <br />
+                                    <span>
+                                        Dự án thực hiện
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ss1">
+            <div class="container">
+                <div class="title-2">    
+                    Tin nổi bật
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="box-news-1">
+                            <img src="./img/6.png" />
+                            <div class="data-color">
+                                24/02/2019
+                            </div>
+                            <div class="image-news-info">
+                                <p>
+                                    Cuộc sống của hơn 200 trẻ mồ côi, 
+                                    khuyết tật được Chùa cưu mang
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="box-news-2">
+                            <div class="box-news-2-image">
+                                <img src="./img/7.png" alt="">
+                                <div class="box-news-2-info">
+                                    <div class="data-color">
+                                        24/02/2019
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-news-2-content">
+                                <a href="#" class="info-underline">
+                                        Mẹ của hàng trăm trẻ mồ côi và khuyết tật: 
+                                        'Nhiều người nói Tim bị điên'
+                                </a>
+                                <p>
+                                    Dù cho là bị điên, bị bao đồng nhưng 26 năm qua, 
+                                    cô gái người Thụy Sĩ có tên Việt là Hoàng Nữ Ngọc Tim 
+                                    vẫn âm thầm
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="box-news-2">
+                            <div class="box-news-2-image">
+                                <img src="./img/8.png" alt="">
+                                <div class="box-news-2-info">
+                                    <div class="data-color">
+                                        24/02/2019
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-news-2-content">
+                                <a href="#" class="info-underline">
+                                        Trẻ em mồ côi khuyết tật: 
+                                        Nỗi đau không gì bù đắp
+                                </a>
+                                <p>
+                                   Việt Nam, quốc gia đầu tiên ở Châu Á và trên thế giới 
+                                   phê chuẩn công ước về Quyền trẻ em năm 1990, tiếp tục thể hiện 
+                                   khả năng lãnh đạo rõ ràng và luôn 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ss1">
+            <div class="container">
+                <div class="title-2">
+                    Đơn vị đồng hành
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-pc">
+                <section class="ss1">
+                        <div class="row">
+                            <div class="col-lg-4 ft-line">
+                               <div class="wrapper">
+                                    <div class="ft">
+                                        <div class="ft-con">
+                                            <div class="ft-1">
+                                                <div class="ft-left">
+                                                    <img src="./img/icon.png"  />
+                                                </div>
+                                                <div class="ft-right">
+                                                    <h2>
+                                                        CHI HỘI BẢO TRỢ NẠN NHÂN NGHÈO VITAMIN C
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                            <div class="icon">
+                                                <a href="#" id="icon-mxh">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                                <a href="#" id="icon-mxh">
+                                                    <i class="fab fa-twitter-square"></i>
+                                                </a>
+                                                <a href="#" id="icon-mxh">
+                                                    <i class="fab fa-youtube"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                               </div>
+                            </div>
+            
+                            <div class="col-lg-4">
+                                <div class="sp-onl">
+                                    <h2>
+                                        ĐÓNG GÓP TRỰC TUYẾN
+                                    </h2>
+                                    <ul class="sp">
+                                        <li>
+                                            Chi hội bảo trợ trẻ em nghèo Vitamin C
+                                        </li>
+                                        <li>
+                                            Địa chỉ: 20 Trần Cao Văn - P.Đa Kao - Q1 - TPHCM
+                                        </li>
+                                        <li>
+                                            Số tài khoản: 1012 949550(VNĐ) - 1012 950744(USD)
+                                        </li>
+                                        <li>
+                                            Tại ngân hàng TMCP Ngoại Thương Việt Nam - Chi nhánh Tân Định - TPHCM
+                                        </li>
+                                        <li>
+                                            139 Hai Bà Trưng - Phường 6 - Quận 3 - TPHCM
+                                        </li>
+                                        <li>
+                                            Swift code: BFTVVNVX
+                                        </li>
+                                    </ul>    
+                                </div>
+                            </div>
+            
+                            <div class="col-lg-4">
+                                <div class="sp-off">
+                                    <h2>
+                                        ĐÓNG GÓP TIỀN MẶT
+                                    </h2>
+                                    <ul  class="sp">
+                                        <li>
+                                            Văn phòng chi hội Vitamin C
+                                        </li>
+                                        <li>
+                                            Địa chỉ: 20 Trần Cao Văn - P.Đa Kao - Q1 - TPHCM
+                                        </li>
+                                    </ul>       
+                                </div>
+                            </div>
+                        </div>
+                </section>
+                <section>
+                        <div class="footer-last">
+                            <div class="footer-last-left">
+                                <p>
+                                    2020 Chi hội Vitamin C. Tất cả được quyền bảo hộ. 
+                                    Thiết kế website bởi Cánh Cam
+                                </p>
+                            </div>
+                            <div class="footer-last-right">
+                                <ul>
+                                    <li>
+                                        <a href="#">Sơ đồ trang web</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Chính sách bảo mật</a>
+                                    </li>    
+                                    <li>
+                                        <a href="#">Điều khoản sử dụng</a>
+                                    </li>        
+                                </ul>
+                            </div>
+                        </div>
+                </section>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+</body>
+</html> 
